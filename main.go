@@ -8,6 +8,51 @@ import (
 )
 
 func main() {
+	/*
+			//protoName := "/Users/xiazemin/go/jsonToCammer/proto/test.proto"
+			id := "ID的值"
+			name := "Name的值"
+
+			ison := &protobuf.TestMsg{
+				Id:   &id,
+				Name: &name,
+			}
+			data, _ := proto.Marshal(ison)
+			fmt.Println(string(data))
+
+			testTest := &protobuf.TeestTestMsg{
+				Id:   proto.String("hhhhh"),
+				Name: proto.String("proto Name"),
+				Msg:  ison,
+			}
+			{
+				data, _ := proto.Marshal(testTest)
+				fmt.Println(string(data))
+				var v proto.Message
+
+				err := proto.Unmarshal(data, v)
+				if err != nil {
+					fmt.Println(err)
+				}
+				fmt.Println(v)
+			}
+
+			mainInterFaceParse := &protobuf.TestMsg{}
+			reply := `
+		package proto;
+		message TestMsg{
+		    optional string id = 1;
+		    optional string name = 2;
+		}
+		`
+			reply = string(data)
+			err := proto.Unmarshal([]byte(reply), mainInterFaceParse)
+			if err != nil {
+				fmt.Println("unmarshal msg error:", err)
+				return
+			}
+
+	*/
 	exp := `{"example_test":{"example_test_1":1},"exampleTest":"1234","example_test_1":1}`
 	if len(os.Args) > 1 {
 		exp = os.Args[1]

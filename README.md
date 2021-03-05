@@ -2,3 +2,8 @@
 
 可以配合改成proto
 https://json-to-proto.github.io/
+
+
+protoc --go_out=plugins=grpc:. proto/test.proto
+
+go mod init proto_test
